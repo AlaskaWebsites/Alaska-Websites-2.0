@@ -2,6 +2,7 @@
   <Nav />
   <slot />
   <Footer />
+  <button><i class="fa-brands fa-square-whatsapp icon-whatsapp"></i></button>
 </template>
 <script setup>
 import Nav from "./Partials/Nav/index";

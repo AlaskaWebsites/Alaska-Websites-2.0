@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
+      link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' }]
     },
   },
 
@@ -17,8 +18,8 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @use "@/assets/styles/abstracts/_variables.scss" as *;
             @use "@/assets/styles/abstracts/_mixins.scss" as *;
+            @use "@/assets/styles/abstracts/_variables.scss" as *;
           `,
           api: "modern-compiler",
         },
@@ -31,5 +32,8 @@ export default defineNuxtConfig({
     "@assets": "./assets",
   },
 
-  modules: ["@nuxt/image"],
+  modules: ["@nuxt/image", "@nuxtjs/i18n"],
+  i18n: {
+    vueI18n: "./i18n.config.js",
+  },
 });

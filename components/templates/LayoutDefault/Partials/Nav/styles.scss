@@ -1,1 +1,9 @@
-@include container-mixin;
+@include container;
+@include primary-buttom;
+
+.header {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

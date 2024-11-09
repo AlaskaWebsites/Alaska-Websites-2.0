@@ -16,14 +16,40 @@
     }
 }
 
-@mixin container-mixin {
+@mixin container {
     .container {
-        padding: 20px 5vw;
+        padding: 20px calc(10vw - 30px);
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .container {
+            padding: 20px calc(12vw - 40px);
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        .container {
+            padding: 20px calc(8vw - 20px);
+        }
     }
 
     @media only screen and (max-width: 768px) {
         .container {
+            padding: 20px calc(5vw - 10px);
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .container {
             padding: 20px 3vw;
         }
+    }
+}
+
+@mixin primary-buttom {
+    .primary-buttom {
+        padding: 15px;
+        border-radius: 30px;
+        border: 2px solid black;
     }
 }
