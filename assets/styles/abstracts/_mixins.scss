@@ -1,0 +1,29 @@
+@mixin font-source($size: false, $color: false, $weight: false, $lineHeight: false) {
+    @if $size {
+        font-size: $size !important;
+    }
+
+    @if $color {
+        color: $color;
+    }
+
+    @if $weight {
+        font-weight: $weight;
+    }
+
+    @if $lineHeight {
+        line-height: $lineHeight;
+    }
+}
+
+@mixin container-mixin {
+    .container {
+        padding: 20px 5vw;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .container {
+            padding: 20px 3vw;
+        }
+    }
+}
