@@ -3,10 +3,10 @@ export default defineI18nConfig(() => ({
   locale: "PT_BR",
   messages: {
     EN: {
-      contact: "Say Hello!",
+      contact: "Say Hello",
     },
     PT_BR: {
-      contact: "Diga um Olá!",
+      contact: "Diga um Olá",
     },
   },
 }));

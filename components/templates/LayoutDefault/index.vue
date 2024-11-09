@@ -7,6 +7,30 @@
     target="_blank"
     ><i class="fa-brands fa-square-whatsapp icon-whatsapp"></i
   ></a>
+  <div class="controllers">
+    <button class="controller-language">
+      <div>
+        <p>PT-BR</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div>
+        <p>EN</p>
+      </div>
+    </button>
+    <button class="controller-mode-template">
+      <div>
+        <i class="fa-solid fa-sun"></i>
+      </div>
+      <div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div>
+        <i class="fa-solid fa-moon"></i>
+      </div>
+    </button>
+  </div>
 </template>
 <script setup>
 import Nav from "./Partials/Nav/index";
