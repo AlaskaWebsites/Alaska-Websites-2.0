@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
   app: {
     head: {
@@ -13,16 +14,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  alias: {
-    "@Components": "./components",
-    "@assets": "./assets",
-  },
   css: ["~/assets/styles/main.scss"],
-  compatibilityDate: "2024-04-03",
-  modules: ["@nuxt/image", "@pinia/nuxt"],
-  pinia: {
-    storesDirs: ["./stores/**"],
-  },
   vite: {
     css: {
       preprocessorOptions: {
@@ -36,4 +28,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  alias: {
+    "@Components": "./components",
+    "@assets": "./assets",
+  },
+  modules: ["@nuxt/image", "@pinia/nuxt"],
 });
