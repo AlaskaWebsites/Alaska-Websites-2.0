@@ -32,5 +32,5 @@ export default defineNuxtConfig({
     "@Components": "./components",
     "@assets": "./assets",
   },
-  modules: ["@nuxt/image", "@pinia/nuxt"],
+  modules: ["@nuxt/image"],
 });

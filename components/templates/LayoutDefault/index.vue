@@ -9,20 +9,19 @@
   ></a>
   <div class="controllers">
     <button
-      @click="changeModeTemplate(!modeTemplateState)"
       :class="`controller-mode-template ${defineControllerBackgroundTemplate}`"
     >
       <div>
         <i
           :class="`controller-mode-template-icon-primary ${
-            !modeTemplateState ? 'fa-solid fa-sun ' : 'fa-solid fa-moon'
+            false ? 'fa-solid fa-sun ' : 'fa-solid fa-moon'
           }`"
         ></i>
       </div>
       <div>
         <i
           :class="`fa-solid fa-chevron-right ${
-            !modeTemplateState
+            false
               ? 'controller-arrow-icon-template-primary'
               : 'controller-arrow-icon-template-secondary'
           }`"
@@ -31,7 +30,7 @@
       <div>
         <i
           :class="`controller-mode-template-icon-secondary ${
-            !modeTemplateState ? 'fa-solid fa-moon' : 'fa-solid fa-sun'
+            false ? 'fa-solid fa-moon' : 'fa-solid fa-sun'
           } `"
         ></i>
       </div>
@@ -42,14 +41,9 @@
 import Nav from "./Partials/Nav/index";
 import Footer from "./Partials/Footer/index";
 
-const storeMT = modeTemplate();
-
-const { changeModeTemplate } = storeMT;
-
-const { modeTemplateState } = storeToRefs(storeMT);
 
 const defineControllerBackgroundTemplate = computed(() => {
-  return modeTemplateState
+  return false
     ? "controller-mode-template-primary"
     : "controller-mode-template-secondary";
 });

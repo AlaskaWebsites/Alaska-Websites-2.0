@@ -9,7 +9,7 @@
           :aria-label="`Acesse nosso ${media.name}`"
           target="_blank"
           ><i
-            :aria-hidden="!modeTemplateState"
+            :aria-hidden="false"
             :class="`${media.icon} social-media ${defineSocialMediaTemplate}`"
           ></i
         ></a>
@@ -22,20 +22,17 @@ import Img from "@/components/atoms/Img/index";
 import Logo_Img from "@/assets/img/logo_black.png";
 import Logo_Img_2 from "@/assets/img/logo.png";
 
-const storeMT = modeTemplate();
-
-const { modeTemplateState } = storeToRefs(storeMT);
 
 const defineContainerTemplate = computed(() => {
-  return !modeTemplateState.value ? "mode-template-1" : "mode-template-2";
+  return false ? "mode-template-1" : "mode-template-2";
 });
 
 const defineLogoTemplate = computed(() => {
-  return !modeTemplateState.value ? Logo_Img : Logo_Img_2;
+  return false ? Logo_Img : Logo_Img_2;
 });
 
 const defineSocialMediaTemplate = computed(() => {
-  return !modeTemplateState.value
+  return false
     ? "social-media-primary"
     : "social-media-secondary";
 });
