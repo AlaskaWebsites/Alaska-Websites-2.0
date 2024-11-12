@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
-    <div class="header">
-      <Img :src="Logo_Img" :alt="'Logo Alaska Websites'" />
+  <div :class="`container ${defineContainerTemplate}`">
+    <div :class="`header`">
+      <Img :src="defineLogoTemplate" :alt="'Logo Alaska Websites'" />
       <nav aria-label="Menu principal">
         <ul>
           <li v-for="(item, index) in navItems" :key="index">
-            <NuxtLink :to="item.href" :class="item.class">{{
+            <NuxtLink :to="item.href" :class="defineButtomTemplate">{{
               item.label
             }}</NuxtLink>
           </li>
@@ -17,12 +17,25 @@
 <script setup>
 import Img from "@/components/atoms/Img/index";
 import Logo_Img from "@/assets/img/logo_black.png";
+import Logo_Img_2 from "@/assets/img/logo.png";
 
-const { t } = useI18n();
+const storeMT = modeTemplate();
 
-const navItems = ref([
-  { label: t("contact"), href: "/contact", class: "primary-buttom" },
-]);
+const { modeTemplateState } = storeToRefs(storeMT);
+
+const navItems = ref([{ label: "Diga um Oi", href: "/contact" }]);
+
+const defineContainerTemplate = computed(() => {
+  return !modeTemplateState.value ? "mode-template-1" : "mode-template-2";
+});
+
+const defineLogoTemplate = computed(() => {
+  return !modeTemplateState.value ? Logo_Img : Logo_Img_2;
+});
+
+const defineButtomTemplate = computed(() => {
+  return !modeTemplateState.value ? "primary-buttom" : "secondary-buttom";
+});
 </script>
 <style lang="scss">
 @import url("styles.scss");

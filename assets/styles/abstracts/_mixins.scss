@@ -53,3 +53,32 @@
         border: 2px solid black;
     }
 }
+
+@mixin secondary-buttom {
+    .secondary-buttom {
+        padding: 15px;
+        border-radius: 30px;
+        border: 2px solid #f4f4f4;
+        color: #f4f4f4;
+    }
+}
+
+@mixin social-media {
+    .social-media {
+        padding: 10px;
+        border-radius: 100%;
+        font-size: 20px;
+    }
+}
+
+@mixin social-media-primary {
+    .social-media-primary {
+        border: 2px solid black;
+    }
+}
+
+@mixin social-media-secondary {
+    .social-media-secondary {
+        border: 2px solid #f4f4f4;
+    }
+}

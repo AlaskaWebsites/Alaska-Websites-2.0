@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.8.1",
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
+    "@pinia/nuxt": "^0.7.0",
     "nuxt": "^3.14.159",
     "vue": "latest",
     "vue-router": "latest"

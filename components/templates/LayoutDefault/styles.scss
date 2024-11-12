@@ -1,9 +1,14 @@
+//ABSOLUT COMPONENT'S SIDE
 .icon-whatsapp {
     font-size: 60px;
     color: $color-4;
     position: fixed;
     bottom: 0;
     left: 5px;
+}
+
+.icon-whatsapp i{
+    color: $color-2;
 }
 
 .controllers {
@@ -29,22 +34,36 @@
     border-radius: 10px;
 }
 
-.controller-mode-template,
-.controller-language {
-    background-color: rgba(128, 128, 128, 0.384);
+.controller-mode-template {
     width: 100%;
     padding: 7px;
 }
 
-.controller-mode-template .fa-sun {
-    color: $color-5;
+.controller-mode-template-primary {
+    background-color: $color-6;
 }
 
-.controller-mode-template .fa-moon {
+.controller-mode-template-secondary {
+    background-color: $color-7;
+}
+
+.controller-mode-template-icon-primary {
+    color: $color-1;
+}
+
+.controller-mode-template-icon-secondary {
     color: $color-2;
 }
 
 .controller-mode-template .fa-sun,
 .controller-mode-template .fa-moon {
     font-size: 20px;
+}
+
+.controller-arrow-icon-template-primary {
+    color: $color-1;
+}
+
+.controller-arrow-icon-template-secondary {
+    color: $color-2;
 }

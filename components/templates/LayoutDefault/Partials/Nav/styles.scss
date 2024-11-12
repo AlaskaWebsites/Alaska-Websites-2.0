@@ -1,5 +1,6 @@
 @include container;
 @include primary-buttom;
+@include secondary-buttom;
 
 .header {
     display: flex;
@@ -7,6 +8,21 @@
     justify-content: space-between;
 }
 
-nav ul  li{
+.mode-template-1 {
+    background-color: $color-3;
+}
+
+.mode-template-2 {
+    background-color: $color-1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
     font-weight: bold;
+    margin: 0 10px;
 }

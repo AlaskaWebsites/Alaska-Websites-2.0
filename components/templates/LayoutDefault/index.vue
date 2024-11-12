@@ -8,26 +8,32 @@
     ><i class="fa-brands fa-square-whatsapp icon-whatsapp"></i
   ></a>
   <div class="controllers">
-    <button class="controller-language">
+    <button
+      @click="changeModeTemplate(!modeTemplateState)"
+      :class="`controller-mode-template ${defineControllerBackgroundTemplate}`"
+    >
       <div>
-        <p>PT-BR</p>
+        <i
+          :class="`controller-mode-template-icon-primary ${
+            !modeTemplateState ? 'fa-solid fa-sun ' : 'fa-solid fa-moon'
+          }`"
+        ></i>
       </div>
       <div>
-        <i class="fa-solid fa-chevron-right"></i>
+        <i
+          :class="`fa-solid fa-chevron-right ${
+            !modeTemplateState
+              ? 'controller-arrow-icon-template-primary'
+              : 'controller-arrow-icon-template-secondary'
+          }`"
+        ></i>
       </div>
       <div>
-        <p>EN</p>
-      </div>
-    </button>
-    <button class="controller-mode-template">
-      <div>
-        <i class="fa-solid fa-sun"></i>
-      </div>
-      <div>
-        <i class="fa-solid fa-chevron-right"></i>
-      </div>
-      <div>
-        <i class="fa-solid fa-moon"></i>
+        <i
+          :class="`controller-mode-template-icon-secondary ${
+            !modeTemplateState ? 'fa-solid fa-moon' : 'fa-solid fa-sun'
+          } `"
+        ></i>
       </div>
     </button>
   </div>
@@ -35,6 +41,18 @@
 <script setup>
 import Nav from "./Partials/Nav/index";
 import Footer from "./Partials/Footer/index";
+
+const storeMT = modeTemplate();
+
+const { changeModeTemplate } = storeMT;
+
+const { modeTemplateState } = storeToRefs(storeMT);
+
+const defineControllerBackgroundTemplate = computed(() => {
+  return modeTemplateState
+    ? "controller-mode-template-primary"
+    : "controller-mode-template-secondary";
+});
 </script>
 <style lang="scss" scoped>
 @import url("styles.scss");
