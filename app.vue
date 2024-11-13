@@ -12,8 +12,4 @@ useSeoMeta({
   ogImage: "https://example.com/image.png",
   twitterCard: "summary_large_image",
 });
-
-const storeMT = modeTemplate();
-
-await useAsyncData("mode-template", () => storeMT.fetchUser())
 </script>
