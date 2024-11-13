@@ -17,6 +17,9 @@ importers:
       nuxt:
         specifier: ^3.14.159
         version: 3.14.159(@parcel/watcher@2.5.0)(@types/node@22.9.0)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.25.0)(sass@1.80.6)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.9.0)(sass@1.80.6)(terser@5.36.0))
+      pinia:
+        specifier: ^2.2.6
+        version: 2.2.6(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
       vue:
         specifier: latest
         version: 3.5.12(typescript@5.6.3)

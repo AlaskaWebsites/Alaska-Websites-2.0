@@ -57,6 +57,8 @@ const socialMedia = ref([
     icon: "fa-solid fa-envelope",
   },
 ]);
+
+await changeModeTemplate()
 </script>
 <style lang="scss">
 @import url("styles.scss");

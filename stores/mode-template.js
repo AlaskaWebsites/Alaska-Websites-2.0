@@ -1,3 +1,5 @@
+import { defineStore } from "pinia";
+
 export const modeTemplate = defineStore("mode-template", () => {
   const cookieModeTemplate = useCookie("mode-template");
   const modeTemplateState = ref(cookieModeTemplate);
