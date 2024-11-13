@@ -1,20 +1,18 @@
 <template>
-  <ClientOnly>
-    <div :class="`container ${defineContainerTemplate}`">
-      <div :class="`header`">
-        <Img :src="defineLogoTemplate" :alt="'Logo Alaska Websites'" />
-        <nav aria-label="Menu principal">
-          <ul>
-            <li v-for="(item, index) in navItems" :key="index">
-              <NuxtLink :to="item.href" :class="defineButtomTemplate">{{
-                item.label
-              }}</NuxtLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <div :class="`container ${defineContainerTemplate}`">
+    <div :class="`header`">
+      <Img :src="defineLogoTemplate" :alt="'Logo Alaska Websites'" />
+      <nav aria-label="Menu principal">
+        <ul>
+          <li v-for="(item, index) in navItems" :key="index">
+            <NuxtLink :to="item.href" :class="defineButtomTemplate">{{
+              item.label
+            }}</NuxtLink>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </ClientOnly>
+  </div>
 </template>
 <script setup>
 import Img from "@/components/atoms/Img/index";

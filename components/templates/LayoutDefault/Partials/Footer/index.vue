@@ -1,23 +1,21 @@
 <template>
-  <ClientOnly>
-    <footer :class="`footer ${defineContainerTemplate}`">
-      <Img :src="defineLogoTemplate" :alt="'Logo Alaska Websites'" />
-      <h2>Vivendo, aprendendo e evoluindo um dia de cada vez.</h2>
-      <ul class="social-media-list">
-        <li v-for="(media, id) in socialMedia" :key="id">
-          <a
-            :href="media.link"
-            :aria-label="`Acesse nosso ${media.name}`"
-            target="_blank"
-            ><i
-              :aria-hidden="!modeTemplateState"
-              :class="`${media.icon} social-media ${defineSocialMediaTemplate}`"
-            ></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
-  </ClientOnly>
+  <footer :class="`footer ${defineContainerTemplate}`">
+    <Img :src="defineLogoTemplate" :alt="'Logo Alaska Websites'" />
+    <h2>Vivendo, aprendendo e evoluindo um dia de cada vez.</h2>
+    <ul class="social-media-list">
+      <li v-for="(media, id) in socialMedia" :key="id">
+        <a
+          :href="media.link"
+          :aria-label="`Acesse nosso ${media.name}`"
+          target="_blank"
+          ><i
+            :aria-hidden="!modeTemplateState"
+            :class="`${media.icon} social-media ${defineSocialMediaTemplate}`"
+          ></i
+        ></a>
+      </li>
+    </ul>
+  </footer>
 </template>
 <script setup>
 import Img from "@/components/atoms/Img/index";
