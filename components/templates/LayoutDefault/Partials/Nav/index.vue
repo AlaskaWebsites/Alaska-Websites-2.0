@@ -37,7 +37,6 @@ const defineButtomTemplate = computed(() => {
   return !modeTemplateState.value ? "primary-buttom" : "secondary-buttom";
 });
 
-await changeModeTemplate()
 </script>
 <style lang="scss">
 @import url("styles.scss");

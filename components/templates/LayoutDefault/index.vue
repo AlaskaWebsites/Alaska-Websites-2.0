@@ -54,7 +54,6 @@ const defineControllerBackgroundTemplate = computed(() => {
     : "controller-mode-template-secondary";
 });
 
-await changeModeTemplate()
 </script>
 <style lang="scss" scoped>
 @import url("styles.scss");

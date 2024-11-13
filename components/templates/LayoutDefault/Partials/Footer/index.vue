@@ -58,7 +58,6 @@ const socialMedia = ref([
   },
 ]);
 
-await changeModeTemplate()
 </script>
 <style lang="scss">
 @import url("styles.scss");
