@@ -15,6 +15,7 @@
         ></a>
       </li>
     </ul>
+    <p class="cnpj-alaska-websites">CNPJ: 45.522.484/0001-77, &copy; Alaska Websites</p>
   </footer>
 </template>
 <script setup>
@@ -57,8 +58,7 @@ const socialMedia = ref([
     icon: "fa-solid fa-envelope",
   },
 ]);
-
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import url("styles.scss");
 </style>

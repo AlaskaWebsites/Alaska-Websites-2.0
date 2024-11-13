@@ -1,10 +1,13 @@
 //ABSOLUT COMPONENT'S SIDE
 .icon-whatsapp {
-    font-size: 60px;
-    color: $color-4;
+    font-size: 45px;
+    color: $color-2;
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     left: 5px;
+    background-color: $color-4;
+    border-radius: 5px;
+    padding: 3px;
 }
 
 .icon-whatsapp i{

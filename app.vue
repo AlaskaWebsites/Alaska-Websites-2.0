@@ -5,11 +5,12 @@
 </template>
 <script setup>
 useSeoMeta({
-  title: "My Amazing Site",
-  ogTitle: "My Amazing Site",
-  description: "This is my amazing site, let me tell you all about it.",
-  ogDescription: "This is my amazing site, let me tell you all about it.",
-  ogImage: "https://example.com/image.png",
-  twitterCard: "summary_large_image",
+  title: "Alaska Websites",
+  ogTitle: "Alaska Websites",
+  description:
+    "Aplicação Web Moderna Alaska Websites, meu portifólio e acesso a minhas informações e serviços.",
+  ogDescription:
+    "Aplicação Web Moderna Alaska Websites, meu portifólio e acesso a minhas informações e serviços.",
+  ogImage: "./assets/img/logo.png",
 });
 </script>

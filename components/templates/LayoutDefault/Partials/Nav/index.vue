@@ -38,6 +38,6 @@ const defineButtomTemplate = computed(() => {
 });
 
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import url("styles.scss");
 </style>
