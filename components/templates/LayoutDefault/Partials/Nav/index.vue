@@ -19,19 +19,22 @@ import Img from "@/components/atoms/Img/index";
 import Logo_Img from "@/assets/img/logo_black.png";
 import Logo_Img_2 from "@/assets/img/logo.png";
 
+const storeMT = modeTemplate();
+
+const { modeTemplateState } = storeToRefs(storeMT);
 
 const navItems = ref([{ label: "Diga um Oi", href: "/contact" }]);
 
 const defineContainerTemplate = computed(() => {
-  return false ? "mode-template-1" : "mode-template-2";
+  return !modeTemplateState.value ? "mode-template-1" : "mode-template-2";
 });
 
 const defineLogoTemplate = computed(() => {
-  return false ? Logo_Img : Logo_Img_2;
+  return !modeTemplateState.value ? Logo_Img : Logo_Img_2;
 });
 
 const defineButtomTemplate = computed(() => {
-  return false ? "primary-buttom" : "secondary-buttom";
+  return !modeTemplateState.value ? "primary-buttom" : "secondary-buttom";
 });
 </script>
 <style lang="scss">
