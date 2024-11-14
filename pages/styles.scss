@@ -1,6 +1,12 @@
 @include container;
 @include card;
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .mode-template-primary {
   background-color: $color-3;
   color: $color-1;

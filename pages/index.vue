@@ -2,7 +2,7 @@
   <div :class="`container ${defineContainerTemplate}`">
     <section :class="`qualifications`" aria-label="Qualificações">
       <div class="qualifications-apresentations">
-        <h1>Desenvolvedor Frontend, Backend e Fullstack</h1>
+        <h1>Desenvolvimento Frontend, Backend e Fullstack</h1>
         <p>
           Código Limpo, Arquitetura limpa, Escalabilidade, Responsividade,
           Acessibilidade, Projeto Padronizado, Testes de Qualidade
