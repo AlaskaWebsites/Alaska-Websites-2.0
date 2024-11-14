@@ -11,6 +11,16 @@
   color: $color-2;
 }
 
+.mode-template-primary-card {
+  border-color: $color-1;
+  background-color: $color-2;
+}
+
+.mode-template-secondary-card {
+  border-color: $color-2;
+  background-color: $color-1;
+}
+
 //QUALIFICATIONS SECTION
 .qualifications {
   display: flex;
@@ -18,7 +28,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  height: 500px;
+  height: 650px;
   position: relative;
 }
 
@@ -208,7 +218,7 @@
   justify-content: center;
 }
 
-.profile-description-apresentations-text{
+.profile-description-apresentations-text {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -227,17 +237,31 @@
   width: 60%;
 }
 
-.card-skills{
+.card-skills {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-.profile-description-apresentations .card{
+.profile-description-apresentations .card {
   width: 400px;
-  height: 600px;
+  height: 650px;
   margin: 15px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+
+.card-icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
 }
 
 //MOBILE
@@ -288,5 +312,16 @@
 
   .profile-description-apresentations p {
     font-size: 16px;
+  }
+
+  .profile-description-apresentations .card {
+    width: 100%;
+  }
+}
+
+//DESKTOP AND TABLET
+@media only screen and (max-width: 976px) {
+  .profile-description-apresentations .card {
+    width: 80%;
   }
 }

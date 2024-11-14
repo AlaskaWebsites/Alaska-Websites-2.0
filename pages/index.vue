@@ -34,16 +34,22 @@
           </p>
         </div>
         <div class="card-skills">
-          <div class="card">
-            <div>X</div>
-            <div>
+          <div :class="`card ${defineCardTemplate}`">
+            <div class="card-content">
+              <Img
+                :src="Frontend_img_white"
+                :alt="'Ícone Frontend do cartão'"
+                class="card-icon"
+              />
+            </div>
+            <div class="card-content">
               <h3>Desenvolvedor Front-end</h3>
               <p>
                 Gosto de programar coisas do zero e gosto de dar vida a ideias
                 no navegador.
               </p>
             </div>
-            <div>
+            <div class="card-content">
               <h3>Tecnologias que uso:</h3>
               <p>
                 HTML, CSS, JavaScript, Bootstrap, Vue.js, Vuex, Vue Router,
@@ -52,7 +58,7 @@
                 Electron.
               </p>
             </div>
-            <div>
+            <div class="card-content">
               <h3>Ferramentas do Desenvolvedor</h3>
               <p>
                 Bitbucket, Github, Vercel, Netlifly, Digital Ocean, Google
@@ -60,40 +66,53 @@
               </p>
             </div>
           </div>
-          <div class="card">
-            <div>X</div>
-            <div>
+          <div :class="`card ${defineCardTemplate}`">
+            <div class="card-content">
+              <Img
+                :src="Server_img_white"
+                :alt="'Ícone Frontend do cartão'"
+                class="card-icon"
+              />
+            </div>
+            <div class="card-content">
               <h3>Desenvolvedor Back-end</h3>
               <p>
                 Gosto de desenvolver servidores do zero, com bancos de dados
                 relacionais e não relacionais.
               </p>
             </div>
-            <div>
+            <div class="card-content">
               <h3>Tecnologias que uso:</h3>
               <p>
                 Node.js, Express.js, JSON Web Token, Axios, Socket.io, MQTT,
                 Token, API REST e RESTful.
               </p>
             </div>
-            <div>
+            <div class="card-content">
               <h3>Ferramentas do Desenvolvedor</h3>
               <p>Sequelize, PM2 e Mongoose</p>
             </div>
           </div>
-          <div class="card">
-            <div>X</div>
-            <div>
+          <div :class="`card ${defineCardTemplate}`">
+            <div class="card-content">
+              <Img
+                :src="Db_img_white"
+                :alt="'Ícone Frontend do cartão'"
+                class="card-icon"
+              />
+            </div>
+            <div class="card-content">
               <h3>Banco de Dados</h3>
               <p>
                 Trabalho com bancos de dados relacionais e não relacionais,
                 dependendo da necessidade do projeto.
               </p>
             </div>
-            <div>
+            <div class="card-content">
               <h3>Tecnologias que uso:</h3>
               <p>MySQL, PostgreSQL, SQLight e MongoDB</p>
             </div>
+            <div></div>
           </div>
         </div>
       </div>
@@ -101,6 +120,11 @@
   </div>
 </template>
 <script setup>
+import Img from "@/components/atoms/Img/index.vue";
+import Frontend_img_white from "@/assets/img/front-end-white.png";
+import Server_img_white from "@/assets/img/server-white.png";
+import Db_img_white from "@/assets/img/banco-de-dados-em-nuvem-white.png";
+
 const storeMT = modeTemplate();
 
 const { modeTemplateState } = storeToRefs(storeMT);
@@ -109,6 +133,12 @@ const defineContainerTemplate = computed(() => {
   return !modeTemplateState.value
     ? "mode-template-primary"
     : "mode-template-secondary";
+});
+
+const defineCardTemplate = computed(() => {
+  return !modeTemplateState.value
+    ? "mode-template-primary-card"
+    : "mode-template-secondary-card";
 });
 </script>
 <style lang="scss" scoped>
