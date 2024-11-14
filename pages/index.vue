@@ -2,10 +2,10 @@
   <div :class="`container ${defineContainerTemplate}`">
     <section :class="`qualifications`" aria-label="Qualificações">
       <div class="qualifications-apresentations">
-        <h1>Desenvolvedor Front-end, Backend e Fullstack</h1>
+        <h1>Desenvolvedor Frontend, Backend e Fullstack</h1>
         <p>
           Código Limpo, Arquitetura limpa, Escalabilidade, Responsividade,
-          Projeto Padronizado, Testes de Qualidade
+          Acessibilidade, Projeto Padronizado, Testes de Qualidade
         </p>
       </div>
       <div class="box-coffe-animation">
@@ -25,13 +25,77 @@
     </section>
     <section class="profile-description">
       <div class="profile-description-apresentations">
-        <h2>Olá, sou Danilo. Prazer em conhecê-lo.</h2>
-        <p>
-          Olá, sou um Desenvolvedor de Software experiente, especializado em
-          estruturação limpa, arquitetura baseada em atomic design, organização
-          e escalabilidade. Meu compromisso é fornecer tecnologias atualizadas e
-          de qualidade para a melhor experiência do usuário.
-        </p>
+        <div class="profile-description-apresentations-text">
+          <h2>Olá, sou Danilo. Prazer em conhecê-lo.</h2>
+          <p>
+            Desenvolvendo Software a mais de 4 anos, meu compromisso é fornecer
+            tecnologias atualizadas e de qualidade para a melhor experiência do
+            usuário.
+          </p>
+        </div>
+        <div class="card-skills">
+          <div class="card">
+            <div>X</div>
+            <div>
+              <h3>Desenvolvedor Front-end</h3>
+              <p>
+                Gosto de programar coisas do zero e gosto de dar vida a ideias
+                no navegador.
+              </p>
+            </div>
+            <div>
+              <h3>Tecnologias que uso:</h3>
+              <p>
+                HTML, CSS, JavaScript, Bootstrap, Vue.js, Vuex, Vue Router,
+                Vuetify, Nuxt, Pinia, React.js, Material-UI, Chakra-Ui, Next.js,
+                React Hooks, Redux, ContextAPI, Next.js, Typescript, Storybook e
+                Electron.
+              </p>
+            </div>
+            <div>
+              <h3>Ferramentas do Desenvolvedor</h3>
+              <p>
+                Bitbucket, Github, Vercel, Netlifly, Digital Ocean, Google
+                Cloud, Firebase, Git e VS Code
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div>X</div>
+            <div>
+              <h3>Desenvolvedor Back-end</h3>
+              <p>
+                Gosto de desenvolver servidores do zero, com bancos de dados
+                relacionais e não relacionais.
+              </p>
+            </div>
+            <div>
+              <h3>Tecnologias que uso:</h3>
+              <p>
+                Node.js, Express.js, JSON Web Token, Axios, Socket.io, MQTT,
+                Token, API REST e RESTful.
+              </p>
+            </div>
+            <div>
+              <h3>Ferramentas do Desenvolvedor</h3>
+              <p>Sequelize, PM2 e Mongoose</p>
+            </div>
+          </div>
+          <div class="card">
+            <div>X</div>
+            <div>
+              <h3>Banco de Dados</h3>
+              <p>
+                Trabalho com bancos de dados relacionais e não relacionais,
+                dependendo da necessidade do projeto.
+              </p>
+            </div>
+            <div>
+              <h3>Tecnologias que uso:</h3>
+              <p>MySQL, PostgreSQL, SQLight e MongoDB</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>

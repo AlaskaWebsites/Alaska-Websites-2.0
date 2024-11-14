@@ -1,7 +1,7 @@
 <template>
   <footer :class="`footer ${defineContainerTemplate}`">
     <Img :src="defineLogoTemplate" :alt="'Logo Alaska Websites'" />
-    <h2>Vivendo, aprendendo e evoluindo um dia de cada vez.</h2>
+    <h2>Vivendo, aprendendo e evoluindo.</h2>
     <ul class="social-media-list">
       <li v-for="(media, id) in socialMedia" :key="id">
         <a

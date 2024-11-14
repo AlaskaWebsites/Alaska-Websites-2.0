@@ -82,3 +82,10 @@
         border: 2px solid #f4f4f4;
     }
 }
+
+@mixin card {
+    .card {
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+}
