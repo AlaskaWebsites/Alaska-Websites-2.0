@@ -43,7 +43,7 @@
               />
             </div>
             <div class="card-content">
-              <h3>Desenvolvedor Front-end</h3>
+              <h3>Front-end</h3>
               <p>
                 Gosto de programar coisas do zero e gosto de dar vida a ideias
                 no navegador.
@@ -52,10 +52,10 @@
             <div class="card-content">
               <h3>Tecnologias que uso:</h3>
               <p>
-                HTML, CSS, JavaScript, Bootstrap, Vue.js, Vuex, Vue Router,
-                Vuetify, Nuxt, Pinia, React.js, Material-UI, Chakra-Ui, Next.js,
-                React Hooks, Redux, ContextAPI, Next.js, Typescript, Storybook e
-                Electron.
+                HTML, CSS, JavaScript, Bootstrap, Bulma, Tailwind, Vue.js, Vuex,
+                Vue Router, Vuetify, Nuxt, Pinia, React.js, Material-UI,
+                Chakra-Ui, Next.js, React Hooks, Redux, ContextAPI, Next.js,
+                Typescript, Storybook e Electron.
               </p>
             </div>
             <div class="card-content">
@@ -75,7 +75,7 @@
               />
             </div>
             <div class="card-content">
-              <h3>Desenvolvedor Back-end</h3>
+              <h3>Back-end</h3>
               <p>
                 Gosto de desenvolver servidores do zero, com bancos de dados
                 relacionais e não relacionais.
@@ -85,12 +85,15 @@
               <h3>Tecnologias que uso:</h3>
               <p>
                 Node.js, Express.js, JSON Web Token, Axios, Socket.io, MQTT,
-                Token, API REST e RESTful.
+                Token, API REST e RESTful, TypeScript.
               </p>
             </div>
             <div class="card-content">
               <h3>Ferramentas do Desenvolvedor</h3>
-              <p>Sequelize, PM2 e Mongoose</p>
+              <p>
+                Sequelize, PM2, Mongoose, Bitbucket, Github, Google Cloud,
+                Firebase, Git e VS Code
+              </p>
             </div>
           </div>
           <div :class="`card ${defineCardTemplate}`">
@@ -115,6 +118,31 @@
             <div></div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="my-recent-work">
+      <div class="my-recent-work-header">
+        <h2>Meus trabalhos recente</h2>
+        <p>
+          Aqui estão alguns projetos de Frontend, Backend e também Fullstack
+          anteriores em que trabalhei. Quer ver mais?
+          <a
+            href="mailto:dan.trabalho94@gmail.com?subject=Dúvidas sobre seus serviços&body=Olá, Danilo! Venho através do seu site, tenho duvidas sobre seus serviços. Por favor, entre em contato com este E-mail, obrigado!"
+            target="_blank"
+            >Envie-me um e-mail
+          </a>
+          .
+        </p>
+      </div>
+      <div class="my-recent-work-content">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+        </ul>
       </div>
     </section>
   </div>

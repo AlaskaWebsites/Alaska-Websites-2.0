@@ -270,6 +270,39 @@
   margin: 0 auto;
 }
 
+//MY RECENT WORK SECTION
+.my-recent-work {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.my-recent-work-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.my-recent-work-header h2 {
+  font-size: 48px;
+}
+
+.my-recent-work-header p {
+  font-weight: 600;
+  font-size: 18px;
+  width: 60%;
+}
+
+.my-recent-work-header a {
+  font-weight: 900;
+}
+
+
 //MOBILE
 //SECTION QUALIFICATIONS
 @media only screen and (max-width: 768px) {
