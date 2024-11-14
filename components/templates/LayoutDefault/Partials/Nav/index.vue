@@ -26,7 +26,7 @@ const { modeTemplateState } = storeToRefs(storeMT);
 const navItems = ref([{ label: "Diga um Oi", href: "/contact" }]);
 
 const defineContainerTemplate = computed(() => {
-  return !modeTemplateState.value ? "mode-template-1" : "mode-template-2";
+  return !modeTemplateState.value ? "mode-template-primary" : "mode-template-secondary";
 });
 
 const defineLogoTemplate = computed(() => {

@@ -15,7 +15,9 @@
         ></a>
       </li>
     </ul>
-    <p class="cnpj-alaska-websites">CNPJ: 45.522.484/0001-77, &copy; Alaska Websites</p>
+    <p class="cnpj-alaska-websites">
+      CNPJ: 45.522.484/0001-77, &copy; Alaska Websites
+    </p>
   </footer>
 </template>
 <script setup>
@@ -28,7 +30,9 @@ const storeMT = modeTemplate();
 const { modeTemplateState } = storeToRefs(storeMT);
 
 const defineContainerTemplate = computed(() => {
-  return !modeTemplateState.value ? "mode-template-1" : "mode-template-2";
+  return !modeTemplateState.value
+    ? "mode-template-primary"
+    : "mode-template-secondary";
 });
 
 const defineLogoTemplate = computed(() => {

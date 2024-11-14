@@ -1,17 +1,24 @@
 @include container;
 
-.container {
-  position: relative;
+.mode-template-primary {
+  background-color: $color-3;
+  color: $color-1;
 }
 
+.mode-template-secondary {
+  background-color: $color-1;
+  color: $color-2;
+}
+
+//QUALIFICATIONS SECTION
 .qualifications {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: gray;
   height: 500px;
+  position: relative;
 }
 
 .qualifications-apresentations {
@@ -33,7 +40,7 @@
   font-size: 18px;
 }
 
-//ANIMATION SECTION QUALIFICATIONS
+//ANIMATION QUALIFICATIONS SECTION
 .box-coffe-animation {
   position: absolute;
   top: 75%;
@@ -46,7 +53,7 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #868686;
   margin-top: -75px;
   margin-left: 75px;
   z-index: 0;
@@ -127,8 +134,8 @@
 
 #cup-body {
   position: absolute;
-  height: 200px;
-  width: 300px;
+  height: 150px;
+  width: 250px;
   border-radius: 0 0 150px 150px;
   background-color: #fff;
   margin: auto;
@@ -139,9 +146,9 @@
 
 #cup-shade {
   position: relative;
-  height: 300px;
-  width: 200px;
-  background-color: #F3F3F3;
+  height: 249px;
+  width: 169px;
+  background-color: #efefef;
   display: inline-block;
   margin-left: 42%;
   margin-top: -3px;
@@ -151,44 +158,111 @@
 
 #cup-handle {
   position: relative;
-  height: 115px;
-  width: 115px;
+  height: 72px;
+  width: 70px;
   border-radius: 0 150px 150px 0;
-  border: 15px solid #F3F3F3;
+  border: 15px solid #efefef;
   margin-bottom: 95px;
-  margin-left: 250px;
+  margin-left: 237px;
   display: inline-block;
   z-index: 0;
 }
 
 #saucer {
   position: absolute;
-  height: 30px;
-  width: 300px;
+  height: 25px;
+  width: 280px;
   border-radius: 0 0 100px 100px;
-  background-color: #F9F9F9;
+  background-color: #e3e3e3;
   margin-top: -44px;
-  margin-left: 5px;
+  margin-left: -13px;
   z-index: 2;
 }
 
 #shadow {
   height: 10px;
-  width: 300px;
+  width: 260px;
   border-radius: 50%;
-  margin-top: -17px;
-  margin-left: 6px;
-  background-color: rgba($color: #000000, $alpha: 0.5);
+  margin-top: -22px;
+  margin-left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+//PROFILE DESCRIPTION
+.profile-description {
+  background-color: gray;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-description-apresentations {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-description-apresentations h2 {
+  font-size: 48px;
+}
+
+.profile-description-apresentations p {
+  font-weight: 600;
+  font-size: 18px;
+  width: 60%;
 }
 
 //MOBILE
-
+//SECTION QUALIFICATIONS
 @media only screen and (max-width: 768px) {
   .qualifications-apresentations h1 {
     font-size: 36px;
   }
 
   .qualifications-apresentations p {
+    font-size: 16px;
+  }
+
+  #cup-body {
+    height: 135px;
+    width: 220px;
+  }
+
+  #cup-handle {
+    height: 70px;
+    width: 60px;
+    margin-left: 200px;
+  }
+
+  #cup-shade {
+    height: 215px;
+    width: 120px;
+    margin-left: 50%;
+    margin-top: -12px;
+  }
+
+  #saucer {
+    height: 25px;
+    width: 250px;
+    margin-top: -44px;
+    margin-left: -11px;
+  }
+
+  #shadow {
+    width: 234px;
+  }
+
+
+  //SECTION PROFILE DESCRIPTION
+  .profile-description-apresentations h2 {
+    font-size: 36px;
+  }
+
+  .profile-description-apresentations p {
     font-size: 16px;
   }
 }
