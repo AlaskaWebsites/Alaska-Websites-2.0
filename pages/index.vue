@@ -135,13 +135,13 @@
         </p>
       </div>
       <div class="my-recent-work-content">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
+        <ul v-for="(apiGames, id) in listRecentWorls" :key="id">
+          <a target="_blank" :href="apiGames.href">
+            <li :class="`${apiGames.class} ${defineCardTemplate}`">
+              <h4><i class="fa-brands fa-github"></i> {{ apiGames.name }}</h4>
+              <Img :src="apiGames.src" :apiGames.alt />
+            </li>
+          </a>
         </ul>
       </div>
     </section>
@@ -152,6 +152,7 @@ import Img from "@/components/atoms/Img/index.vue";
 import Frontend_img_white from "@/assets/img/front-end-white.png";
 import Server_img_white from "@/assets/img/server-white.png";
 import Db_img_white from "@/assets/img/banco-de-dados-em-nuvem-white.png";
+import Game_api_img from "@/assets/img/game-api-img.png";
 
 const storeMT = modeTemplate();
 
@@ -168,6 +169,17 @@ const defineCardTemplate = computed(() => {
     ? "mode-template-primary-card"
     : "mode-template-secondary-card";
 });
+
+const listRecentWorls = ref([
+  {
+    name: "API de games com CRUD completo",
+    href: "https://github.com/AlaskaWebsites/app_api_de_games",
+    src: Game_api_img,
+    alt: "API com CRUD completo",
+    class: "card",
+    imgClass: "",
+  },
+]);
 </script>
 <style lang="scss" scoped>
 @import url("styles.scss");

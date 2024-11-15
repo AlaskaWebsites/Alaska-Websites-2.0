@@ -278,6 +278,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px 0;
+  height: 600px;
 }
 
 .my-recent-work-header {
@@ -286,6 +287,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .my-recent-work-header h2 {
@@ -302,6 +304,17 @@
   font-weight: 900;
 }
 
+.my-recent-work .card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-recent-work .card h4 {
+  margin-bottom: 10px;
+}
 
 //MOBILE
 //SECTION QUALIFICATIONS
