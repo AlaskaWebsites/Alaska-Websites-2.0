@@ -4,7 +4,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 60px;
 }
 
 .mode-template-primary {
@@ -278,7 +277,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px 0;
-  height: 600px;
+  height: 800px;
 }
 
 .my-recent-work-header {
@@ -310,10 +309,61 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 450px;
+  height: 250px;
 }
 
 .my-recent-work .card h4 {
   margin-bottom: 10px;
+}
+
+.my-recent-work-content ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-recent-work-content ul a{
+  margin: 5px;
+}
+
+.vue-circle-icon{
+  color: $color-8;
+}
+
+.scss-circle-icon{
+  color: $color-9;
+}
+
+.ts-circle-icon{
+  color: $color-10;
+}
+
+.js-circle-icon{
+  color: $color-11;
+}
+
+.html-circle-icon{
+  color: $color-12;
+}
+
+.react-circle-icon{
+  color: $color-13;
+}
+
+.css-circle-icon{
+  color: $color-14;
+}
+
+.my-recent-work .card i{
+  font-size: 13px;
+}
+
+.my-recent-work-content-languages p{
+  margin: 0 5px;
+}
+
+.my-recent-work-content-languages p i{
+  margin-left: 2px;
 }
 
 //MOBILE

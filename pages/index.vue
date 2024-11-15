@@ -135,11 +135,31 @@
         </p>
       </div>
       <div class="my-recent-work-content">
-        <ul v-for="(apiGames, id) in listRecentWorls" :key="id">
-          <a target="_blank" :href="apiGames.href">
+        <ul>
+          <a
+            v-for="(apiGames, id) in listRecentWorls"
+            :key="id"
+            target="_blank"
+            :href="apiGames.href"
+          >
             <li :class="`${apiGames.class} ${defineCardTemplate}`">
               <h4><i class="fa-brands fa-github"></i> {{ apiGames.name }}</h4>
               <Img :src="apiGames.src" :apiGames.alt />
+              <ul>
+                <h4>Linguagens:</h4>
+                <li
+                  class="my-recent-work-content-languages"
+                  v-for="(lg, id) in apiGames.languages"
+                  :key="id"
+                >
+                  <p>
+                    {{ lg.name
+                    }}<i
+                      :class="`fa-solid fa-circle ${lg.iconLanguageColor}`"
+                    ></i>
+                  </p>
+                </li>
+              </ul>
             </li>
           </a>
         </ul>
@@ -153,6 +173,8 @@ import Frontend_img_white from "@/assets/img/front-end-white.png";
 import Server_img_white from "@/assets/img/server-white.png";
 import Db_img_white from "@/assets/img/banco-de-dados-em-nuvem-white.png";
 import Game_api_img from "@/assets/img/game-api-img.png";
+import Logo_Img from "@/assets/img/logo_black.png";
+import Logo_Img_2 from "@/assets/img/logo.png";
 
 const storeMT = modeTemplate();
 
@@ -170,14 +192,144 @@ const defineCardTemplate = computed(() => {
     : "mode-template-secondary-card";
 });
 
+const defineLogoTemplate = computed(() => {
+  return !modeTemplateState.value ? Logo_Img : Logo_Img_2;
+});
+
 const listRecentWorls = ref([
   {
-    name: "API de games com CRUD completo",
-    href: "https://github.com/AlaskaWebsites/app_api_de_games",
-    src: Game_api_img,
-    alt: "API com CRUD completo",
+    name: "Aplicação Alaska Websites",
+    href: "https://github.com/AlaskaWebsites/Alaska-Websites-2.0",
+    src: defineLogoTemplate,
+    alt: "Aplicação Alaska Websites",
     class: "card",
     imgClass: "",
+    languages: [
+      {
+        name: "Vue",
+        iconLanguageColor: "vue-circle-icon",
+      },
+      {
+        name: "SCSS",
+        iconLanguageColor: "scss-circle-icon",
+      },
+      {
+        name: "JavaScript",
+        iconLanguageColor: "js-circle-icon",
+      },
+      {
+        name: "TypeScript",
+        iconLanguageColor: "ts-circle-icon",
+      },
+    ],
+  },
+  {
+    name: "Aplicação Para Agendar Consultas Médicas",
+    href: "https://github.com/AlaskaWebsites/app_MV_desafio_front-end",
+    src: defineLogoTemplate,
+    alt: "Aplicação Para Agendar Consultas Médicas",
+    class: "card",
+    imgClass: "",
+    languages: [
+      {
+        name: "Vue",
+        iconLanguageColor: "vue-circle-icon",
+      },
+      {
+        name: "JavaScript",
+        iconLanguageColor: "js-circle-icon",
+      },
+      {
+        name: "HTML",
+        iconLanguageColor: "html-circle-icon",
+      },
+      {
+        name: "CSS",
+        iconLanguageColor: "css-circle-icon",
+      },
+    ],
+  },
+  {
+    name: "Aplicação Para Delivery de comidas",
+    href: "https://github.com/AlaskaWebsites/app_food_deliver",
+    src: defineLogoTemplate,
+    alt: "Aplicação Para Delivery de comidas",
+    class: "card",
+    imgClass: "",
+    languages: [
+      {
+        name: "React",
+        iconLanguageColor: "react-circle-icon",
+      },
+      {
+        name: "JavaScript",
+        iconLanguageColor: "js-circle-icon",
+      },
+      {
+        name: "HTML",
+        iconLanguageColor: "html-circle-icon",
+      },
+      {
+        name: "CSS",
+        iconLanguageColor: "css-circle-icon",
+      },
+    ],
+  },
+  {
+    name: "Aplicação Mini E-commerce",
+    href: "https://github.com/AlaskaWebsites/app_ecommerce_v2",
+    src: defineLogoTemplate,
+    alt: "Aplicação Mini E-commerce",
+    class: "card",
+    imgClass: "",
+    languages: [
+      {
+        name: "Vue",
+        iconLanguageColor: "vue-circle-icon",
+      },
+      {
+        name: "JavaScript",
+        iconLanguageColor: "js-circle-icon",
+      },
+      {
+        name: "TypeScript",
+        iconLanguageColor: "ts-circle-icon",
+      },
+      {
+        name: "HTML",
+        iconLanguageColor: "html-circle-icon",
+      },
+      {
+        name: "CSS",
+        iconLanguageColor: "css-circle-icon",
+      },
+    ],
+  },
+  {
+    name: "Aplicação Stock Tracker, compra e venda de ações",
+    href: "https://github.com/AlaskaWebsites/app_ecommerce_v2",
+    src: defineLogoTemplate,
+    alt: "Aplicação Stock Tracker, compra e venda de ações",
+    class: "card",
+    imgClass: "",
+    languages: [
+      {
+        name: "Vue",
+        iconLanguageColor: "vue-circle-icon",
+      },
+      {
+        name: "JavaScript",
+        iconLanguageColor: "js-circle-icon",
+      },
+      {
+        name: "HTML",
+        iconLanguageColor: "html-circle-icon",
+      },
+      {
+        name: "CSS",
+        iconLanguageColor: "css-circle-icon",
+      },
+    ],
   },
 ]);
 </script>

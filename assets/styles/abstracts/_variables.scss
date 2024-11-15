@@ -5,6 +5,13 @@ $color-4: #25d366;
 $color-5: rgb(247, 247, 54);
 $color-6: rgba(182, 179, 179, 0.514);
 $color-7: rgba(182, 179, 179, 0.096);
+$color-8: #41b883;
+$color-9: #c6538c;
+$color-10: #3178c6;
+$color-11: #f1e05a;
+$color-12: #e34c26;
+$color-13: #61dbfb;
+$color-14: #563d7c;
 
 :export {
     color-1: $color-1;
@@ -14,4 +21,9 @@ $color-7: rgba(182, 179, 179, 0.096);
     color-5: $color-5;
     color-6: $color-6;
     color-7: $color-7;
+    color-8: $color-8;
+    color-9: $color-9;
+    color-12: $color-12;
+    color-13: $color-13;
+    color-14: $color-14;
 }
